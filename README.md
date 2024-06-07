@@ -17,3 +17,8 @@ As for music genres, I love them all. However, my favorite genres are R&B, jazz,
 | CSC 3150      | Systems Design     |
 | UFDN 3100     | Christian Theology |
 
+
+## Project Portfolio
+
+[Systems Design Document](https://spuonline-my.sharepoint.com/:w:/r/personal/tranb10_spu_edu/Documents/Tran%20Bria%20-%20System%20Proposal%20Part%201+2%20-%20Adoration%20Planning%20App%20-%20%20v2.docx?d=w74099d40930b443e81096ec4fe4baaad&csf=1&web=1&e=0McrWy)
+[Systems Specifications Document](https://spuonline-my.sharepoint.com/:w:/r/personal/tranb10_spu_edu/Documents/Tran%20Bria%20-%20System%20Specification%20-%20AdoraPlan%20-%20v1.docx?d=w11a166c8dd704ec69716f375d7ed8531&csf=1&web=1&e=Pv0Iah)
