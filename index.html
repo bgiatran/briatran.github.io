@@ -1,50 +1,107 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bria G. Tran</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bria G. Tran | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <!-- Main Content -->
-    <div id="main-content" class="hidden">
-
-        <!-- Updated Header Section -->
-        <header>
-            <h1 id="header-title" class="large-title">
-                <span class="bria">BRIA</span><br>
-                <span class="tran">TRAN</span>
-            </h1>
-            <div id="add">+</div>
-        </header>
-
-        <div class="custom-links">
-            <a href="tel:+14253648832">+1 425 364 8832</a>
-            <a href="mailto:redglasscr@gmail.com">redglasscr@gmail.com</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
-
-
-        <p>
-            <span>Bria Tran. 19.</span> <span>Seattle, Washington.</span> <br><br>
-            <span>Web Designer.</span> <span>Data Analyst.</span> <span>Aspiring Music Technologist.</span> <br><br>
-            <span>Building seamless digital experiences.</span> <span>Uncovering insights through data.</span> <br><br>
-            <span>Innovating at the intersection of music and AI.</span> <span>Shaping the future of sound.</span> <br><br>
-            <span>—on a path of discovery.</span>
-        </p>
-
-
-        <!-- Bottom Navigation Bar -->
-        <nav class="navbar">
-            <a href="web.html" class="web-link">WEBPAGES</a>
-            <a href="data.html" class="data-link">DATA</a>
-            <a href="systems.html" class="systems-link">SYSTEMS</a>
+    <header id="home">
+        <nav>
+            <h1>Bria G. Tran</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#creative">Creative</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+        <section class="hero">
+            <h2>Aspiring Music Data Scientist</h2>
+            <p>Merging analytical brilliance with artistic soul.</p>
+        </section>
+    </header>
 
-    </div>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                <span>Bria Tran. 20.</span> <span>Seattle, Washington.</span> <br><br>
+                <span>Music AI Enthusiast.</span> <span>Data Analyst.</span> <span>Aspiring Music Technologist.</span> <br><br>
+                <span>Building seamless digital experiences.</span> <span>Uncovering insights through data.</span> <br><br>
+                <span>Innovating at the intersection of music and AI.</span> <span>Shaping the future of sound.</span> <br><br>
+                <span>—on a path of discovery.</span>
+            </p>
 
+            <h3>My Autumn 2025 Courses</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Number</th>
+                        <th>Course Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>MAT 1234</td><td>Calculus I</td></tr>
+                    <tr><td>CSC 3750</td><td>Computer Architecture and Organization</td></tr>
+                    <tr><td>CSC 4410</td><td>Database Systems</td></tr>
+                    <tr><td>PSY 3060</td><td>Practical Statistics: Software, Analysis, and Reporting</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Data Dashboard</h3>
+                    <p>Genre Demographics.</p>
+                </div>
+                <div class="project">
+                    <h3>Machine Learning</h3>
+                    <p>Music Similarity Model</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="creative">
+            <h2>Creative Corner</h2>
+            <div class="creative-section">
+                <div class="music">
+                    <h3>🎵 Music</h3>
+                    <p>Check out my latest playlist and mixes.</p>
+                    <audio controls>
+                        <source src="assets/music/sample.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="photos">
+                    <h3>📸 Photography</h3>
+                    <p>Some shots I've taken on travels.</p>
+                    <div class="gallery">
+                        <img src="assets/images/photo1.jpg" alt="Photo 1" />
+                        <img src="assets/images/photo2.jpg" alt="Photo 2" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bria G. Tran</p>
+        <a href="#home" class="back-to-top">↑ Back to Top</a>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
