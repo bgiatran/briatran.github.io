@@ -141,6 +141,15 @@ section {
   border: 1px solid #ccc;
 }
 
+/* Section Titles for Project Categories */
+#projects h3 {
+  font-size: 1.5rem;
+  color: #c2542c;
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -215,4 +224,3 @@ th {
 td {
   background-color: #fffaf5;
 }
-
