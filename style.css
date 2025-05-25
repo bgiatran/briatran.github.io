@@ -1,6 +1,4 @@
-﻿/* style.css */
-
-body {
+﻿body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -8,12 +6,41 @@ body {
   color: #333;
   scroll-behavior: smooth;
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 
 header {
   background: #c2542c;
@@ -26,6 +53,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 60px; /* Add a fixed height */
   background: #c2542c;
   color: white;
   display: flex;
@@ -35,6 +63,11 @@ nav {
   padding: 1rem 2rem;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Push content down to clear fixed navbar */
+main {
+  padding-top: 80px; /* slightly more than nav height to add some spacing */
 }
 
 nav h1 {
@@ -75,35 +108,37 @@ section {
   margin: auto;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.horizontal-projects {
+  display: flex;
   gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
 }
 
 .project {
+  flex: 0 0 auto;
   background: #ffe5d3;
   padding: 1rem;
   border-left: 5px solid #c2542c;
   border-radius: 8px;
+  min-width: 280px;
+  max-width: 320px;
 }
 
-.creative-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.project h3 {
+  margin-top: 0;
+  color: #1f2937;
 }
 
-.gallery {
-  display: flex;
-  gap: 1rem;
+.project p {
+  margin-bottom: 15px;
 }
 
-.gallery img {
-  width: 100px;
+.project img {
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
 }
 
 form {
@@ -149,7 +184,6 @@ footer {
   font-weight: bold;
 }
 
-/* About section content */
 #about p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -161,8 +195,7 @@ footer {
   font-weight: 500;
 }
 
-
-    table {
+table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 2rem;
@@ -182,3 +215,4 @@ th {
 td {
   background-color: #fffaf5;
 }
+

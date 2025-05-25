@@ -7,101 +7,97 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header id="home">
-        <nav>
-            <h1>Bria G. Tran</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#creative">Creative</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
+<header id="home">
+    <nav>
+        <h1>Bria G. Tran</h1>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
             <h2>Aspiring Music Data Scientist</h2>
-            <p>Merging analytical brilliance with artistic soul.</p>
-        </section>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
             <p>
                 <span>Bria Tran. 20.</span> <span>Seattle, Washington.</span> <br><br>
                 <span>Music AI Enthusiast.</span> <span>Data Analyst.</span> <span>Aspiring Music Technologist.</span> <br><br>
                 <span>Building seamless digital experiences.</span> <span>Uncovering insights through data.</span> <br><br>
                 <span>Innovating at the intersection of music and AI.</span> <span>Shaping the future of sound.</span> <br><br>
-                <span>—on a path of discovery.</span>
+                <span>on a path of discovery.</span>
             </p>
+        </div>
+    </section>
+</header>
 
-            <h3>My Autumn 2025 Courses</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Course Number</th>
-                        <th>Course Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>MAT 1234</td><td>Calculus I</td></tr>
-                    <tr><td>CSC 3750</td><td>Computer Architecture and Organization</td></tr>
-                    <tr><td>CSC 4410</td><td>Database Systems</td></tr>
-                    <tr><td>PSY 3060</td><td>Practical Statistics: Software, Analysis, and Reporting</td></tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>Data Dashboard</h3>
-                    <p>Genre Demographics.</p>
-                </div>
-                <div class="project">
-                    <h3>Machine Learning</h3>
-                    <p>Music Similarity Model</p>
-                </div>
+<main>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="horizontal-projects">
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Music Cataloguer</h3>
+                <p>A simple design prototype for a music cataloguing app. Explore the GitHub repo:</p>
+                <a href="https://github.com/briatran021094/music-cataloguer-design" target="_blank">
+                    <img src="https://opengraph.githubassets.com/1/briatran021094/music-cataloguer-design" alt="Music Cataloguer Preview">
+                </a>
             </div>
-        </section>
 
-        <section id="creative">
-            <h2>Creative Corner</h2>
-            <div class="creative-section">
-                <div class="music">
-                    <h3>🎵 Music</h3>
-                    <p>Check out my latest playlist and mixes.</p>
-                    <audio controls>
-                        <source src="assets/music/sample.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-                <div class="photos">
-                    <h3>📸 Photography</h3>
-                    <p>Some shots I've taken on travels.</p>
-                    <div class="gallery">
-                        <img src="assets/images/photo1.jpg" alt="Photo 1" />
-                        <img src="assets/images/photo2.jpg" alt="Photo 2" />
-                    </div>
-                </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>DS & Algorithms Projects</h3>
+                <p>A collection of data structures and algorithm projects in C++. Explore the GitHub repo:</p>
+                <a href="https://github.com/briatran021094/ds-algorithms-projects" target="_blank">
+                    <img src="https://opengraph.githubassets.com/1/briatran021094/ds-algorithms-projects" alt="DS & Algorithms Preview">
+                </a>
             </div>
-        </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>AdoraPlan</h3>
+                <p>A planning and productivity tool concept for 2024. Explore the GitHub repo:</p>
+                <a href="https://github.com/briatran021094/adoraplan-2024" target="_blank">
+                    <img src="https://opengraph.githubassets.com/1/briatran021094/adoraplan-2024" alt="AdoraPlan Preview">
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Bria G. Tran</p>
-        <a href="#home" class="back-to-top">↑ Back to Top</a>
-    </footer>
+    <section id="courses">
+        <h3>My Autumn 2025 Courses</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Course Number</th>
+                <th>Course Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td>MAT 1234</td><td>Calculus I</td></tr>
+            <tr><td>CSC 3750</td><td>Computer Architecture and Organization</td></tr>
+            <tr><td>CSC 4410</td><td>Database Systems</td></tr>
+            <tr><td>PSY 3060</td><td>Practical Statistics: Software, Analysis, and Reporting</td></tr>
+            </tbody>
+        </table>
+    </section>
 
-    <script src="main.js"></script>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Bria G. Tran</p>
+    <a href="#home" class="back-to-top">↑ Back to Top</a>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
+
