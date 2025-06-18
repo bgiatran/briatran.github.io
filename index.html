@@ -11,12 +11,35 @@
 <body>
 <header id="home">
     <nav>
-        <h1>Bria G. Tran</h1>
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container">
+        <div class="nav-left">
+            <h1>Bria G. Tran</h1>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#more-about">More</a></li>
+            </ul>
+        </div>
+        <div class="nav-right social-icons">
+            <a href="mailto:tranb10@spu.edu" target="_blank" aria-label="Email">
+                <img src="images/icons/mail_16866791.png" alt="Email" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/bria-tran/" target="_blank" aria-label="LinkedIn">
+                <img src="images/icons/linkedin_3536569.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://github.com/bgiatran" target="_blank" aria-label="GitHub">
+                <img src="images/icons/github_11376446.png" alt="GitHub" class="icon">
+            </a>
+            <!--<a href="https://leetcode.com/u/briagtran/" target="_blank" aria-label="Leetcode">
+                <img src="images/icons/Leetcode--Streamline-Simple-Icons.png" alt="Leetcode" class="icon">
+            </a>-->
+        </div>
+        </div>
     </nav>
+
     <section class="hero">
         <div class="hero-content">
             <h2>Aspiring Data Scientist</h2>
@@ -32,89 +55,204 @@
 </header>
 
 <main>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-photo">
+                <img src="images\GDHBE0644.JPG" alt="Bria Tran">
+                <div class="photo-caption">
+                    <strong>Bria Tran</strong><br>
+                    Information Systems & Data Science Major<br>
+                    Seattle Pacific University
+                </div>
+            </div>
+            <div class="about-text">
+                <p>
+                    Hello! My name is Bria Tran. I’m a data analyst and aspiring data scientist who dreams of helping music professionals and creative industries use data and technology to uncover insights, understand audiences, and design more meaningful, human-centered experiences.<br></br>
+                    My core skills include SQL, Python, Excel, data visualization, systems design, full-stack development, and UI/UX design. I’m also actively exploring machine learning and AI-driven technologies as part of my ongoing learning journey. <br></br>
+                    Beyond the technical side, I care deeply about collaboration, problem-solving, and creating positive, creative environments where ideas can grow. Years of working in diverse roles have shaped my ability to lead with empathy, communicate clearly, and build solutions that bring real value to people. <br></br>
+                    The projects below reflect both my technical skills and my passion for using technology to connect people, amplify creativity, and drive innovation, especially in spaces like music where art and community come together. <br></br>
+                    If you'd like to learn more about who I am, and whether I'd be a great fit for your team or project, feel free to explore my "Learn More About Me" section!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
     <section id="projects">
         <h2>Projects</h2>
-
-        <!-- Section 1: Data Structures & Algorithms -->
-        <h3>Data Structures & Algorithms</h3>
-        <div class="horizontal-projects">
+        <div class="horizontal-projects expanded">
             <div class="project">
-                <h3>Theory Implementation</h3>
-                <p>A collection of projects in C++ and Python. Explore the GitHub repo:</p>
-                <a href="https://github.com/briatran021094/ds-algorithms-projects" target="_blank">
-                    <img src="https://opengraph.githubassets.com/1/briatran021094/ds-algorithms-projects" alt="Algorithms Preview">
-                </a>
+                <img src="https://opengraph.githubassets.com/1/bgiatran/global-music-trends" alt="Global Music Trends">
+                <p class="date">May 2025</p>
+                <h3>Global Music Trends</h3>
+                <p>Explore global music genre trends using analytics and visualization.</p>
+                <a href="https://github.com/bgiatran/global-music-trends" target="_blank">View on GitHub</a>
             </div>
-        </div>
 
-        <!-- Section 2: Systems Design -->
-        <h3>Systems Design</h3>
-        <div class="horizontal-projects">
             <div class="project">
-                <h3>AdoraPlan</h3>
-                <p>A planning and productivity tool concept. Explore the GitHub repo:</p>
-                <a href="https://github.com/briatran021094/adoraplan-2024" target="_blank">
-                    <img src="https://opengraph.githubassets.com/1/briatran021094/adoraplan-2024" alt="AdoraPlan Preview">
-                </a>
+                <img src="https://opengraph.githubassets.com/1/bgiatran/film-success-analysis" alt="Film Success Analysis">
+                <p class="date">April 2025</p>
+                <h3>Film Success Analysis</h3>
+                <p>Data-driven project to understand what makes films successful.</p>
+                <a href="https://github.com/bgiatran/film-success-analysis" target="_blank">View on GitHub</a>
             </div>
+
             <div class="project">
+                <img src="images\music-profile\Screenshot (88).png" alt="Music Profile Analytics">
+                <p class="date">April 2025</p>
+                <h3>Music Profile Analytics</h3>
+                <p>A personal listening insights dashboard built with Spotify API.</p>
+                <a href="https://github.com/bgiatran/music-profile-analytics" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <img src="images\netcentric\task.png" alt="Netcentric Manager Suite">
+                <p class="date">March 2025</p>
                 <h3>Netcentric Manager Suite</h3>
-                <p>A web app for managing a list of items with full CRUD functionality using Node.js, Express, and a custom HTTP client.</p>
-                <a href="https://github.com/briatran021094/netcentric-manager-suite" target="_blank">
-                    <img src="https://opengraph.githubassets.com/1/briatran021094/netcentric-manager-suite" alt="Manager Suite Preview">
-                </a>
+                <p>Full-stack CRUD app with custom HTTP client and item manager UI.</p>
+                <a href="https://github.com/bgiatran/netcentric-manager-suite" target="_blank">View on GitHub</a>
             </div>
-        </div>
 
-        <!-- Section 3: Database Projects -->
-        <h3>Database Projects</h3>
-        <div class="horizontal-projects">
             <div class="project">
-                <h3>Music Cataloguer</h3>
-                <p>A simple design prototype for a music cataloguing app. Explore the GitHub repo:</p>
-                <a href="https://github.com/briatran021094/music-cataloguer-design" target="_blank">
-                    <img src="https://opengraph.githubassets.com/1/briatran021094/music-cataloguer-design" alt="Music Cataloguer Preview">
-                </a>
+                <img src="images\music-catalogue\muss.png" alt="Music Catalogue Design">
+                <p class="date">March 2025</p>
+                <h3>Music Catalogue Design</h3>
+                <p>Schema and prototype for a structured music catalog system.</p>
+                <a href="https://github.com/bgiatran/music-catalogue-design" target="_blank">View on GitHub</a>
             </div>
-              <div class="project">
-                  <h3>Music Genre Popularity</h3>
-                  <p>A data analytics project exploring music genre trends across major U.S. cities. Explore the GitHub repo:</p>
-                  <a href="https://github.com/briatran021094/music-genre-popularity" target="_blank">
-                      <img src="https://opengraph.githubassets.com/1/briatran021094/music-genre-popularity" alt="Music Genre Popularity Preview">
-                  </a>
-              </div>
+
+            <div class="project">
+                <img src="images\core-dsa\data.png" alt="Core DSA Concepts">
+                <p class="date">Feb 2025</p>
+                <h3>Core DSA Concepts</h3>
+                <p>Core data structures and algorithms with hands-on implementations.</p>
+                <a href="https://github.com/bgiatran/core-dsa-concepts" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <img src="images\adoraplan\adora.png" alt="AdoraPlan System">
+                <p class="date">Jan 2025</p>
+                <h3>AdoraPlan System</h3>
+                <p>Concept system design for a digital productivity planning tool.</p>
+                <a href="https://github.com/bgiatran/adoraplan-system-design" target="_blank">View on GitHub</a>
+            </div>
         </div>
     </section>
 
-    <section id="courses">
-        <h3 class="courses-heading">My Autumn 2025 Courses</h3>
-        <table>
-            <thead>
-            <tr>
-                <th>Course Number</th>
-                <th>Course Name</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr><td>MAT 1234</td><td>Calculus I</td></tr>
-            <tr><td>CSC 3750</td><td>Computer Architecture and Organization</td></tr>
-            <tr><td>CSC 4410</td><td>Database Systems</td></tr>
-            <tr><td>PSY 3060</td><td>Practical Statistics: Software, Analysis, and Reporting</td></tr>
-            </tbody>
-        </table>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+
+        <div class="certifications-grid">
+
+            <!-- IBM SQL Certificate -->
+            <div class="certification-block">
+                <div class="certification-text">
+                    <h3>IBM Databases and SQL for Data Science with Python</h3>
+                    <p>
+                        Learned to analyze data using SQL and Python by creating relational databases, writing SQL queries from basic to
+                        advanced levels, and leveraging techniques like views, transactions, stored procedures, and joins to work with complex data.
+                    </p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/RVZ1M7T835U2" target="_blank">View Certificate</a>
+                </div>
+                <div class="certification-image">
+                    <img src="images/certs/databases.jpeg" alt="IBM SQL Certificate">
+                </div>
+            </div>
+
+            <!-- IBM Python Certificate -->
+            <div class="certification-block">
+                <div class="certification-text">
+                    <h3>IBM Python for Data Science, AI & Development</h3>
+                    <p>
+                        Learned Python for data science and software development by mastering core programming concepts, using powerful libraries
+                        like Pandas and Numpy, coding in Jupyter Notebooks, and accessing data through APIs and web scraping tools like Beautiful Soup.
+                    </p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/ELIF32BLFORK" target="_blank">View Certificate</a>
+                </div>
+                <div class="certification-image">
+                    <img src="images/certs/python.jpeg" alt="IBM Python Certificate">
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <!-- MORE ABOUT ME SECTION (after Courses) -->
+    <section id="more-about">
+        <h2>More About Me</h2>
+
+        <div class="more-about-block">
+            <div class="more-about-text">
+                <p>
+                    At the core of my work is one question: How can we listen to people better, through music and data?<br></br>
+                    That question drives both my academic path and creative pursuits. I’ve built a strong foundation in SQL, Python, data visualization,
+                    and systems design, and I’m now diving deeper into machine learning and AI-driven projects to explore how emerging technologies can
+                    push the boundaries of music and art, while staying rooted in the humanity of these forms. In a world where technology is evolving rapidly,
+                    I believe it’s equally important to keep learning about the world around us, cultures, communities, and where tech can serve to bring people
+                    together in new and meaningful ways.
+                </p>
+            </div>
+            <div class="more-about-image">
+                <img src="images\concerts\IMG_1226.jpg" alt="Bria performing music">
+            </div>
+        </div>
+
+        <div class="more-about-block reverse">
+            <div class="more-about-text">
+                <p>
+                    I’m a second-generation Vietnamese American and the oldest of 13 cousins, a role that has deeply shaped how I navigate the world.
+                    Growing up in this position taught me to be highly organized, responsible, and reliable, with a natural focus on care, leadership,
+                    and helping others thrive, values that guide both my personal and professional life.<br></br>
+                    In every space I enter, whether on a project team, in the workplace, or in my personal life, I intentionally strive to create environments
+                    that are collaborative, supportive, and solution-oriented. I believe that fostering positive team dynamics, encouraging fast and creative problem-solving,
+                    and building strong relationships are essential to achieving meaningful outcomes. I care deeply about helping people feel valued, heard, and empowered to
+                    contribute their best ideas.
+                </p>
+            </div>
+            <div class="more-about-image">
+                <img src="images\concerts\IMG_8129.jpg" alt="Bria analyzing data">
+            </div>
+        </div>
+
+        <div class="more-about-block">
+            <div class="more-about-text">
+                <p>
+                    For me, innovation and creativity thrive when people feel safe to take risks, experiment, and learn together. That’s why I prioritize cultivating
+                    environments where curiosity, open dialogue, and cross-disciplinary thinking are not only welcomed, but celebrated. Whether through music, technology,
+                    or leadership, I view bringing people together, across cultures, backgrounds, and perspectives, as one of the most important contributions I can make.<br></br>
+                    Though still early in my career, I’ve gained a wide range of skills by working diverse jobs from a young age, sharpening my teamwork, leadership, problem-solving,
+                    and operations abilities. These experiences taught me how to adapt quickly and consistently seek ways to support my teams and contribute to positive,
+                    people-centered spaces.
+                </p>
+            </div>
+            <div class="more-about-image">
+                <img src="images\concerts\IMG_8128.jpg" alt="Bria exploring new places">
+            </div>
+        </div>
+
+        <div class="more-about-block reverse">
+            <div class="more-about-text">
+                <p>
+                    In addition to my technical work, I’m also a passionate DJ, music producer, and community builder. I love creating spaces where people can encounter
+                    new sounds and experiences, not just as entertainment, but as moments of shared connection and belonging.<br></br>
+                    As the music world increasingly embraces AI and big data, I aspire to contribute to projects that honor tradition, empower artists, and amplify diverse
+                    voices, ensuring we use technology to enrich creativity while keeping its human heart intact. For me, the future of music is not just entertainment, it’s
+                    a reflection of who we are, where we’ve been, and where we’re going, and I’m excited to help shape that future through thoughtful, collaborative,
+                    and human-centered innovation.
+                </p>
+            </div>
+            <div class="more-about-image">
+                <img src="images\concerts\IMG_1511.jpg" alt="Bria analyzing data">
+            </div>
+        </div>
     </section>
 </main>
 
+<!-- FOOTER -->
 <footer>
     <p>&copy; 2025 Bria G. Tran</p>
     <a href="#home" class="back-to-top">↑ Back to Top</a>
