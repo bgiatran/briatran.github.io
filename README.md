@@ -1,17 +1,28 @@
-# About Me
+# Bria Tran — Portfolio Website
 
-Hello there! My name is Bria Tran and I am a second-year IS student at Seattle Pacific University.
+Welcome to my personal portfolio website! This site showcases my work in **data science**, **product thinking**, and **creative technology** — blending technical skill with strategic insight to build impactful, human-centered solutions.
 
-Besides academic subjects, I love playing instruments and listening to music!
-My main instruments are the bass and alto saxophone, but I enjoy many others. I also have a band with four other girls I met at a concert and we've been playing together for about three months.
-As for music genres, I love them all. However, my favorite genres are R&B, jazz, and afrobeats. My most notable hobbies are certainly DJing and dancing with my friends.
+[Visit my portfolio](https://bgiatran.github.io/briatran.github.io/)
 
+## Purpose
 
-## Spring Quarter Classes
+The goal of this site is to provide:
+- A centralized hub for my projects and case studies
+- A visual representation of my technical and product journey
+- An interactive resume for recruiters and collaborators
 
-| Course Number | Course Name                          |
-| ------------- | -------------------------------------|
-| CSC 2431      | Data Structures 2                    |
-| CSC 3221      | Netcentric Computing                 |
-| BUS 3614      | Organizational Behavior for Managers |
-| MUS 1251      | Intermediate Keyboard Class          |
+## Features
+
+- **Responsive Design**: Fully optimized across desktop, tablet, and mobile
+- **Project Showcase**: Includes featured data science, machine learning, and product strategy projects with live demos and GitHub links
+- **Resume Integration**: Downloadable and web-friendly resume section
+- **Blog/Insights: Share reflections, technical deep dives, and career insights
+- **Contact Section**: Easy ways to reach out for collaboration or hiring
+
+## Tech Stack
+
+| Layer      | Technology                         |
+|------------|-------------------------------------|
+| Framework  | HTML, CSS, JavaScript              |
+| Styling    | Tailwind CSS or SCSS               |
+| Hosting    | GitHub Pages                       |
