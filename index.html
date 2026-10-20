@@ -9,6 +9,153 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Internship certificate section (self-contained so it works with your existing style.css) */
+        #internship .internship-wrap {
+            max-width: 900px;
+            margin: 2rem auto 0;
+            text-align: center;
+        }
+        #internship .internship-intro {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+        }
+        #internship .cert-frame {
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        #internship .cert-frame:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+        }
+        #internship .cert-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        #internship .internship-caption {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.75;
+        }
+
+        /* Resume section (self-contained; uses currentColor so it fits light or dark themes) */
+        #resume .resume-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0 2.5rem;
+        }
+        #resume .resume-actions a { display: inline-block; }
+        #resume .resume-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+        #resume .resume-col-title {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            opacity: 0.7;
+            margin: 0 0 1.25rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+        }
+        #resume .timeline {
+            position: relative;
+            padding-left: 1.5rem;
+            border-left: 2px solid rgba(128, 128, 128, 0.35);
+        }
+        #resume .job {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        #resume .job:last-child { margin-bottom: 0; }
+        #resume .job::before {
+            content: "";
+            position: absolute;
+            left: calc(-1.5rem - 6px);
+            top: 0.45rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+        #resume .job-head {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.25rem 1rem;
+            align-items: baseline;
+        }
+        #resume .job h3 { margin: 0; font-size: 1.15rem; }
+        #resume .job-date {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.78rem;
+            opacity: 0.7;
+            white-space: nowrap;
+        }
+        #resume .job-org {
+            margin: 0.2rem 0 0.7rem;
+            font-size: 0.92rem;
+            opacity: 0.8;
+        }
+        #resume .job ul {
+            margin: 0;
+            padding-left: 1.1rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        #resume .job li { margin-bottom: 0.4rem; }
+        #resume .side-card {
+            border: 1px solid rgba(128, 128, 128, 0.35);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        #resume .side-card:last-child { margin-bottom: 0; }
+        #resume .side-card h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
+        #resume .side-card .edu-meta {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin: 0 0 0.75rem;
+            line-height: 1.5;
+        }
+        #resume .side-card .edu-courses {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            margin: 0;
+        }
+        #resume .skill-group { margin-bottom: 1.25rem; }
+        #resume .skill-group:last-child { margin-bottom: 0; }
+        #resume .skill-group h4 {
+            margin: 0 0 0.5rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0.7;
+            font-weight: 400;
+        }
+        #resume .chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        #resume .chip-row span {
+            font-size: 0.78rem;
+            padding: 0.25rem 0.6rem;
+            border: 1px solid rgba(128, 128, 128, 0.4);
+            border-radius: 999px;
+            line-height: 1.3;
+        }
+        @media (max-width: 820px) {
+            #resume .resume-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
 
@@ -88,6 +235,117 @@
                 <p>The projects here are self-directed builds and explorations driven by my own curiosity. Take a look around, and feel free to reach out if you'd like to connect!</p>
                 <a href="mailto:tranb10@spu.edu" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Get In Touch →</a>
             </div>
+        </div>
+    </section>
+
+    <!-- INTERNSHIP CERTIFICATE -->
+    <section id="internship">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">SAIC Summer Internship</h2>
+        <div class="internship-wrap">
+            <p class="internship-intro">Completed SAIC's Summer Internship Program with a project assignment at the County of Orange Program, contributing to the Network and Security Teams.</p>
+            <a href="images/certs/saic-internship.png" target="_blank" class="cert-frame" aria-label="Open SAIC Summer Internship Program 2026 certificate in a new tab">
+                <img src="images/certs/saic-internship.png" alt="SAIC Summer Internship Program 2026 certificate of completion for Brianna Tran" loading="lazy">
+            </a>
+            <p class="internship-caption">SAIC Summer Internship Program 2026 · June 29 – August 28, 2026 · County of Orange Program</p>
+        </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+        <div class="section-label">Resume</div>
+        <h2 class="section-title">Experience &amp; Education</h2>
+        <div class="resume-actions">
+            <a href="Brianna_Tran_Resume.pdf" download class="btn-primary">Download PDF ↓</a>
+            <a href="Brianna_Tran_Resume.pdf" target="_blank" class="btn-outline">View Full Resume ↗</a>
+        </div>
+
+        <div class="resume-grid">
+
+            <!-- Experience -->
+            <div class="resume-main">
+                <h3 class="resume-col-title">Work Experience</h3>
+                <div class="timeline">
+
+                    <div class="job">
+                        <div class="job-head">
+                            <h3>Technical Intern</h3>
+                            <span class="job-date">Jun. 2026 – Aug. 2026</span>
+                        </div>
+                        <p class="job-org">SAIC · Santa Ana, CA (Hybrid)</p>
+                        <ul>
+                            <li>Developed a Python automation pipeline for Palo Alto Panorama that detects duplicate NAT/security rules and unused objects, generating CLI commands and JSON audit reports for human review</li>
+                            <li>Validated pipeline logic against an isolated lab instance before deployment, and completed 9+ network topology diagrams across Orange County sites using SolarWinds and SecureCRT/SSH</li>
+                            <li>Assisted with router refresh cycles by transferring bootflash images and performing firmware upgrades</li>
+                            <li>Conducted on-site AP mapping, and authored a Strata Cloud Manager vendor evaluation that informed a County of Orange procurement decision</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-head">
+                            <h3>Shift Manager</h3>
+                            <span class="job-date">Sept. 2025 – Jan. 2026</span>
+                        </div>
+                        <p class="job-org">HeChaLou · Lynnwood, WA</p>
+                        <ul>
+                            <li>Oversaw operations for a Taiwanese chain store launch, coordinating workflows to improve operational efficiency</li>
+                            <li>Trained and mentored new hires on processes, improving team performance and onboarding time</li>
+                            <li>Resolved customer concerns diplomatically, reinforcing brand image and customer retention</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-head">
+                            <h3>Operations Lead</h3>
+                            <span class="job-date">Jan. 2024 – May 2025</span>
+                        </div>
+                        <p class="job-org">UDDJ UW &amp; FaireLaFlex · Seattle, WA</p>
+                        <ul>
+                            <li>Managed cross-functional teams of 10 to deliver event programming for 150+ attendees, defining KPIs and serving as stakeholder liaison for on-time, on-budget delivery</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="resume-side">
+                <h3 class="resume-col-title">Education</h3>
+                <div class="side-card">
+                    <h3>B.S. Computer Information Systems</h3>
+                    <p class="edu-meta">Seattle Pacific University, Seattle, WA<br>Expected Jun. 2027 · GPA 3.6</p>
+                    <p class="edu-courses">Data Structures &amp; Algorithms, Systems Design, Applications Programming, Netcentric Computing, Data Analytics and Visualization, Database Systems, MIS, Computer Architecture, Software Engineering</p>
+                </div>
+
+                <h3 class="resume-col-title" style="margin-top:2rem;">Skills</h3>
+                <div class="side-card">
+                    <div class="skill-group">
+                        <h4>Data &amp; Analytics</h4>
+                        <div class="chip-row">
+                            <span>SQL</span><span>Python</span><span>Excel</span><span>Tableau</span><span>Power BI</span><span>REST APIs</span><span>Data Flows</span><span>Regression Modeling</span><span>NLP</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Product Management</h4>
+                        <div class="chip-row">
+                            <span>Jira</span><span>Agile/Scrum</span><span>Roadmap Planning</span><span>Requirements Elicitation</span><span>KPI Definition</span><span>RICE/MoSCoW</span><span>PRDs</span><span>Stakeholder Collaboration</span><span>Figma</span><span>Confluence</span><span>Wireframing</span><span>User Research</span><span>Oracle</span><span>Technical Writing</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>AI &amp; Platforms</h4>
+                        <div class="chip-row">
+                            <span>Azure AI</span><span>Vector Databases</span><span>Prompt Engineering</span><span>LLM Proficiency</span><span>M365 Copilot</span><span>Copilot Studio</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Technical Operations</h4>
+                        <div class="chip-row">
+                            <span>Systems Integration</span><span>RBAC/GDPR Compliance</span><span>Hardware Troubleshooting</span><span>OAuth2</span><span>SolarWinds</span><span>Palo Alto Panorama</span><span>SecureCRT/SSH</span><span>ServiceNow</span><span>Visio</span><span>Network Diagramming</span><span>LAN/WAN Fundamentals</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
         </div>
     </section>
 
