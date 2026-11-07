@@ -10,37 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Internship certificate section (self-contained so it works with your existing style.css) */
-        #internship .internship-wrap {
-            max-width: 900px;
-            margin: 2rem auto 0;
-            text-align: center;
+        /* SAIC certificate shown beside the internship entry (self-contained) */
+        #resume .job-body {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
         }
-        #internship .internship-intro {
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            line-height: 1.7;
+        #resume .job-body ul { flex: 1 1 auto; min-width: 0; }
+        #resume .job-cert {
+            flex: 0 0 210px;
+            margin: 0;
         }
-        #internship .cert-frame {
+        #resume .job-cert .cert-frame {
             display: block;
-            border-radius: 8px;
+            border-radius: 6px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
-        #internship .cert-frame:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+        #resume .job-cert .cert-frame:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
         }
-        #internship .cert-frame img {
+        #resume .job-cert .cert-frame img {
             display: block;
             width: 100%;
             height: auto;
         }
-        #internship .internship-caption {
-            margin-top: 1rem;
-            font-size: 0.9rem;
+        #resume .job-cert figcaption {
+            margin-top: 0.6rem;
+            font-size: 0.75rem;
+            line-height: 1.4;
             opacity: 0.75;
+            text-align: center;
+        }
+        @media (max-width: 620px) {
+            #resume .job-body { flex-direction: column; }
+            #resume .job-cert { flex-basis: auto; width: 100%; max-width: 320px; }
         }
 
         /* Resume section (self-contained; uses currentColor so it fits light or dark themes) */
@@ -168,6 +174,7 @@
         <div class="nav-center">
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#resume">Experience</a></li>
                 <li><a href="#projects">Work</a></li>
                 <li><a href="#certifications">Certs</a></li>
                 <li><a href="#more-about">More</a></li>
@@ -238,22 +245,9 @@
         </div>
     </section>
 
-    <!-- INTERNSHIP CERTIFICATE -->
-    <section id="internship">
-        <div class="section-label">Experience</div>
-        <h2 class="section-title">SAIC Summer Internship</h2>
-        <div class="internship-wrap">
-            <p class="internship-intro">Completed SAIC's Summer Internship Program with a project assignment at the County of Orange Program, contributing to the Network and Security Teams.</p>
-            <a href="images/saic-internship.png" target="_blank" class="cert-frame" aria-label="Open SAIC Summer Internship Program 2026 certificate in a new tab">
-                <img src="images/saic-internship.png" alt="SAIC Summer Internship Program 2026 certificate of completion for Brianna Tran" loading="lazy">
-            </a>
-            <p class="internship-caption">SAIC Summer Internship Program 2026 · June 29 – August 28, 2026 · County of Orange Program</p>
-        </div>
-    </section>
-
     <!-- RESUME -->
     <section id="resume">
-        <div class="section-label">Resume</div>
+        <div class="section-label">Experience</div>
         <h2 class="section-title">Experience &amp; Education</h2>
         <div class="resume-actions">
             <a href="BT_Resume.pdf" download class="btn-primary">Download PDF ↓</a>
@@ -272,13 +266,21 @@
                             <h3>Technical Intern</h3>
                             <span class="job-date">Jun. 2026 – Aug. 2026</span>
                         </div>
-                        <p class="job-org">SAIC · Santa Ana, CA (Hybrid)</p>
+                        <p class="job-org">SAIC · Santa Ana, CA (Hybrid) · County of Orange Program</p>
+                        <div class="job-body">
                         <ul>
                             <li>Developed a Python automation pipeline for Palo Alto Panorama that detects duplicate NAT/security rules and unused objects, generating CLI commands and JSON audit reports for human review</li>
                             <li>Validated pipeline logic against an isolated lab instance before deployment, and completed 9+ network topology diagrams across Orange County sites using SolarWinds and SecureCRT/SSH</li>
                             <li>Assisted with router refresh cycles by transferring bootflash images and performing firmware upgrades</li>
                             <li>Conducted on-site AP mapping, and authored a Strata Cloud Manager vendor evaluation that informed a County of Orange procurement decision</li>
                         </ul>
+                        <figure class="job-cert">
+                            <a href="images/saic-internship.png" target="_blank" class="cert-frame" aria-label="Open SAIC Summer Internship Program 2026 certificate in a new tab">
+                                <img src="images/saic-internship.png" alt="SAIC Summer Internship Program 2026 certificate of completion for Brianna Tran" loading="lazy">
+                            </a>
+                            <figcaption>SAIC Summer Internship Program 2026 · Certificate of Completion</figcaption>
+                        </figure>
+                        </div>
                     </div>
 
                     <div class="job">
