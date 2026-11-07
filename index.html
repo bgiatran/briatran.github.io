@@ -184,6 +184,11 @@
             object-fit: cover;
             border-radius: 6px;
         }
+        /* Show the whole card (no cropping) for wallet-style cards like the BLS card */
+        #certifications .cert-card .cert-img-contain img {
+            object-fit: contain;
+            background: rgba(128, 128, 128, 0.08);
+        }
         #certifications .cert-card .cert-img-placeholder {
             display: flex;
             align-items: center;
@@ -238,7 +243,7 @@
         </div>
         <div class="nav-right">
             <a href="tel:4253648832" class="nav-phone" aria-label="Phone">(425) 364-8832</a>
-            <a href="mailto:tranb10@spu.edu" target="_blank" aria-label="Email" class="nav-icon-link">
+            <a href="mailto:briagtran@gmail.com" target="_blank" aria-label="Email" class="nav-icon-link">
                 <img src="images/icons/mail_16866791.png" alt="Email" class="icon">
             </a>
             <a href="https://www.linkedin.com/in/bria-tran/" target="_blank" aria-label="LinkedIn" class="nav-icon-link">
@@ -264,7 +269,7 @@
         <p class="hero-sub">Security Compliance · Systems & Health IT · Operational Risk<br>Computer Information Systems @ Seattle Pacific University</p>
         <div class="hero-cta">
             <a href="#projects" class="btn-primary">See My Work</a>
-            <a href="mailto:tranb10@spu.edu" class="btn-outline">Let's Connect</a>
+            <a href="mailto:briagtran@gmail.com" class="btn-outline">Let's Connect</a>
         </div>
     </div>
     <div class="hero-scroll-hint">scroll ↓</div>
@@ -296,7 +301,7 @@
                 <p>On the practical side, I interned with the <strong>Network Security and Operations teams at SAIC</strong>, getting a real look at how enterprise infrastructure, automation, and security operate day-to-day. Right now, I’m building on that foundation by studying for my <strong>CompTIA Security+</strong> and preparing for the <strong>AWS Certified Solutions Architect</strong> exam, while holding an active AHA BLS certification to support my transition into clinical environments.</p>
                 <p>My focus is at the intersection of <strong>IT risk, governance, compliance (GRC), and health technology</strong>. I'm fascinated by how data and systems function in high-compliance environments, whether that’s mapping security risks, ensuring regulatory compliance, or optimizing clinical and diagnostic workflows. To me, technology should actually serve people. That means building and maintaining systems where security and operational progress don’t come at the expense of user trust, safety, or real-world usability.</p>
                 <p>The projects here are self-directed builds and practical explorations. Take a look around, and feel free to reach out if you'd like to connect!</p>
-                <a href="mailto:tranb10@spu.edu" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Get In Touch →</a>
+                <a href="mailto:briagtran@gmail.com" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Get In Touch →</a>
             </div>
         </div>
     </section>
@@ -562,7 +567,7 @@
                     <p>American Heart Association Basic Life Support: high-quality CPR, AED use, and team-based resuscitation for healthcare settings.</p>
                     <span class="cert-status">Active</span>
                 </div>
-                <div>
+                <div class="cert-img cert-img-contain">
                     <img src="images/certs/bls.jpg" alt="AHA BLS Card">
                 </div>
             </div>
@@ -624,7 +629,7 @@
     <div class="footer-inner">
         <div class="footer-name">Bria G. Tran</div>
         <div class="footer-links">
-            <a href="mailto:tranb10@spu.edu">briagtran@gmail.com</a>
+            <a href="mailto:briagtran@gmail.com">briagtran@gmail.com</a>
             <a href="https://www.linkedin.com/in/bria-tran/" target="_blank">LinkedIn</a>
             <a href="https://github.com/bgiatran" target="_blank">GitHub</a>
         </div>
